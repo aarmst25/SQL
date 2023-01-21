@@ -1,0 +1,25 @@
+--Create a clothing store database
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, brand TEXT, color TEXT);
+
+INSERT INTO clothing VALUES (1, "tshirt", 20,"gilden", "red");
+INSERT INTO clothing VALues (2, "pants", 25, "kirkland", "blue");
+INSERT INTO clothing VALUES (3, "bra", 15, "stars_away", "white");
+INSERT INTO clothing VALUES (4, "underwear", 10, "mumu", "pink");
+INSERT INTO clothing VALUES (5, "jacket", 30, "lululemon", "red");
+INSERT INTO clothing VALUES (6, "tank_top", 18, "addidas", "grey");
+INSERT INTO clothing VALUES (7, "shorts", 125, "nike", "black");
+INSERT INTO clothing VALUES (8, "skort", 30, "rebok", "green");
+INSERT INTO clothing VALUES (9, "tennis_shoes", 99, "APL", "yellow");
+INSERT INTO clothing VALUES (10, "headband", 30, "lululemon", "black");
+INSERT INTO clothing VALUES (11, "socks", 10, "adidas", "grey");
+INSERT INTO clothing VALUES (12, "sweatsuit", 100, "lululemon", "tan");
+INSERT INTO clothing VALUES (13, "sweatpants", 50, "nike", "black");
+INSERT INTO clothing VALUES (14, "crewneck", 45, "rebok", "green");
+INSERT INTO clothing VALUES (15, "tennis_dress", 30, "addison_bay", "black");
+
+--Display the database ordered by price
+SELECT* FROM clothing ORDER BY price;
+
+--What is the sum of the items in the store
+SELECT SUM (price) FROM clothing;
+
